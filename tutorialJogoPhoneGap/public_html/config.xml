@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.ely.flybird"
+        version   = "1.0.0">
+    <name>PhoneGap FlyBird</name>
+
+    <description>
+        Tutorial PhoneGap FlyBird
+    </description>
+
+    <author href="http://phonegap.com" email="elyfprado@gmail.com">
+        Ely Prado
+    </author>
+
+    <preference name="orientation"      value="landscape" />
+    <preference name="fullscreen"       value="true" />
+
+    <icon src="res/icon/icon.png" />
+	
+    <gap:splash src="res/screen/screen.png"  />  
+</widget>
