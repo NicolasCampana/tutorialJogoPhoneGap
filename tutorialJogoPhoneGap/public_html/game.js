@@ -11,6 +11,8 @@ var pontos = 0;
 
 var npcs = [];
 
+var vel = 5;
+
 var imgPlayer = [];
 var imgNPC = [];
 
@@ -76,10 +78,9 @@ function onResize() {
 }
 function update() {
 	if (framePerdeu>0) {
-		framePerdeu++;
-		if (clicado && framePerdeu>100) {
+		alert('VOCE PERDEU!');
 			iniciaJogo();
-		}
+		
 
 	} else {
 		if (clicado) {
@@ -94,11 +95,14 @@ function update() {
 		
 		//atualiza NPCs
 		for (i = 0; i<npcs.length; i++) {
-			npcs[i].x -= 5;
+			npcs[i].x -= vel;
 			if (npcs[i].x+npcs[i].width<0) {
 				npcs[i].x = 690;
 				npcs[i].y = Math.round(Math.random() * 310);
 				pontos++;
+			    if(pontos % 10 == 0) {
+                                vel += 0.5;
+                            }
 			}
 		}
 		
