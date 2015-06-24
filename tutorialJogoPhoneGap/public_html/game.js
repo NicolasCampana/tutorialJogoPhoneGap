@@ -76,10 +76,8 @@ function onResize() {
 }
 function update() {
 	if (framePerdeu>0) {
-		framePerdeu++;
-		if (clicado && framePerdeu>100) {
-			iniciaJogo();
-		}
+		alert('VOCE PERDEU!');
+		iniciaJogo();
 
 	} else {
 		if (clicado) {
